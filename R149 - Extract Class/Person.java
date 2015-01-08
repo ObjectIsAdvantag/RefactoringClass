@@ -1,6 +1,3 @@
-package refactoring;
-
-
 public class Person {
 	private String _name;
 	private String _officeAreaCode;
