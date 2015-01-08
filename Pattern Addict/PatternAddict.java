@@ -1,5 +1,3 @@
-package allinone;
-
 interface MessageStrategy {
 	public void sendMessage();
 }
