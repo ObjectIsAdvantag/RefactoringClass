@@ -10,14 +10,6 @@ public class Person {
 	}
 	
 	public String getTelephoneNumber() {
-		return "(" + _officeAreaCode + ")" + _officeAreaCode;
-	}
-
-	String getOfficeAreaCode() {
-		return _officeAreaCode;
-	}
-
-	String getOfficeNumber() {
-		return _officeNumber;
+		return "(" + _officeAreaCode + ")" + _officeNumber;
 	}
 }
