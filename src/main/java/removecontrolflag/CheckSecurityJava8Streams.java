@@ -9,7 +9,7 @@ public class CheckSecurityJava8Streams {
     public static boolean checkSecurity(String[] people) {
         try {
             Arrays.stream(people).forEach((person) -> {
-                assert !isDonOrJohn(person) : "break loop";
+                assert !isBlackListed(person) : "break loop";
             });
         }
         catch (AssertionError ae) {
@@ -18,7 +18,7 @@ public class CheckSecurityJava8Streams {
         return true;
     }
 
-    static boolean isDonOrJohn(String person) {
+    static boolean isBlackListed(String person) {
         return "Don".equals(person) || "John".equals(person);
     }
 

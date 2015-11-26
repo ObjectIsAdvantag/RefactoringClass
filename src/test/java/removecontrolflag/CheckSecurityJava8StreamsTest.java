@@ -18,8 +18,8 @@ public class CheckSecurityJava8StreamsTest {
 
     @org.junit.Test
     public void testIsDonOrJohn() throws Exception {
-        assertTrue(CheckSecurityJava8Streams.isDonOrJohn("Don"));
-        assertTrue(CheckSecurityJava8Streams.isDonOrJohn("John"));
-        assertFalse(CheckSecurityJava8Streams.isDonOrJohn("Stève"));
+        assertTrue(CheckSecurityJava8Streams.isBlackListed("Don"));
+        assertTrue(CheckSecurityJava8Streams.isBlackListed("John"));
+        assertFalse(CheckSecurityJava8Streams.isBlackListed("Stève"));
     }
 }
