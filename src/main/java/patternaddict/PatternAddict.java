@@ -1,5 +1,7 @@
+package patternaddict;
+
 interface MessageStrategy {
-	public void sendMessage();
+	void sendMessage();
 }
 
 abstract class AbstractStrategyFactory {
@@ -21,13 +23,11 @@ class MessageBody {
 
 class DefaultFactory extends AbstractStrategyFactory {
 
-	@Override
 	public MessageStrategy createStrategy(final MessageBody mb) {
 		return new MessageStrategy() {
 
 			MessageBody body = mb;
 
-			@Override
 			public void sendMessage() {
 				Object obj = body.getPayLoad();
 				System.out.println(obj);

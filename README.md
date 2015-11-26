@@ -1,2 +1,6 @@
 # RefactoringClass
-Java source codes for the Refactoring class
+Java codes to refactor
+
+# Authors
+Martin Fowler, Joshua Kerievsky
+

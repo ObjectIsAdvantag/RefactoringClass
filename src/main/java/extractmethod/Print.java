@@ -1,3 +1,5 @@
+package extractmethod;
+
 import java.util.Enumeration;
 import java.util.Vector;
 

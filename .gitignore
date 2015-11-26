@@ -1,1 +1,9 @@
-# Created by .ignore support plugin (hsz.mobi)
+
+# Intellij
+.idea
+target/
+
+# Java binaries & packages
+*.class
+*.jar
+*.war
