@@ -12,10 +12,11 @@ public class CheckSecurityBreakLoop {
     }
 
     static boolean isBlackListed(String person) {
-            return "Don".equals(person) || "John".equals(person);
+        switch (person) {
+            case "Don":
+            case "John":
+                return true;
+        }
+        return false;
     }
-
-
-
-
 }
